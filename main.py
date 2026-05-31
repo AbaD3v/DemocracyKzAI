@@ -194,7 +194,7 @@ async def stream_gemini_response(prompt: str):
     """
     url = (
         "https://generativelanguage.googleapis.com/v1beta/"
-        f"models/gemini-2.0-flash:streamGenerateContent"
+        f"models/gemini-3.1-flash-lite:streamGenerateContent"
         f"?key={GEMINI_API_KEY}&alt=sse"
     )
     payload = {
