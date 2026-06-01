@@ -200,7 +200,7 @@ async def stream_gemini_response(prompt: str):
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature": 0.2,      # низкая температура = меньше галлюцинаций
+            "temperature": 0.5,      # низкая температура = меньше галлюцинаций
             "maxOutputTokens": 1024,
         },
     }
